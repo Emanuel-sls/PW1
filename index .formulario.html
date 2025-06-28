@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .formulario{
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 60px;
+           
+        }
+        .btn{
+            width: 15rem;
+            height: 2rem;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            border-radius: 30px;
+
+        }
+     .a,
+     .b,
+     .c{
+     color:rgb(0, 38, 255);
+    font-size: 20px;
+    text-decoration: none;
+    display:block;
+    margin: 10px;
+     }
+    </style>
+</head>
+<body>
+
+   <form>
+    <div class="formulario">
+        <H1>formulario</H1>
+       <P> EMAIL: <input type="email" placeholder="digite seu email para contato "> </P>
+       NOME: <input type="text" placeholder="digite seu nome">
+
+       <P>SENHA: <input type="password" placeholder="digite sua senha"></p> 
+       SEXO:
+       <input type="radio" id="masculino" name="masculino" value="masculino">
+
+       <label for="masculino">masculino</label>
+
+       <input type="radio" id="feminino" name="masculino" value="feminino">
+
+       <label for="feminino">femininos</label><br>
+     
+       filme preferido:
+       <input type="checkbox" id="comedia" name="comedia" value="comedia">
+       <label for="comedia">comedia</label>
+
+       <input type="checkbox" id="terror" name="terror" value="terror">
+        <label for="terror"> terror</label>
+
+       <input type="checkbox" id="romance" name="romance" value="romance">
+       <label for="romance">romance</label><br>
+
+       <P>em qual cidade voce mora <input list="cidade"></P>
+       <datalist id="cidade">
+          <option value="São Paulo"> São Paulo</option>
+          <option value="Belo Horizonte"> Belo Horizonte</option>
+          <option value="Rio Grande do Sul"> Rio Grande do Sul</option>
+       </datalist>
+        <button class="bnt" onclick="alert('seja bem vindo-(a),seus dados foram salvos, clique para fazer login abaixo do botão')">concluir, </button>
+      </div>
+     
+    </form>
+
+    
+</body>
+</html>
